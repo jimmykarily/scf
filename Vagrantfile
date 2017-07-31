@@ -164,6 +164,14 @@ Vagrant.configure(2) do |config|
     ${HOME}/bin/direnv allow ${HOME}/scf
   SHELL
 
+  config.vm.provision "shell", privileged: true, inline: <<-SHELL
+    set -e
+
+    # Ensure containers aren't blocked by the firewall
+    sysctl -w net.bridge.bridge-nf-call-iptables=0
+    sysctl -w net.bridge.bridge-nf-call-ip6tables=0
+  SHELL
+
   config.vm.provision "shell", privileged: false, inline: <<-SHELL
     set -e
 
