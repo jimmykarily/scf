@@ -26,11 +26,13 @@ properties:
       lifecycle_bundles:
         - "buildpack/cflinuxfs2:buildpack_app_lifecycle/buildpack_app_lifecycle.tgz"
         - "buildpack/opensuse42:buildpack_app_lifecycle/buildpack_app_lifecycle.tgz"
+        - "buildpack/cfsusefs2:buildpack_app_lifecycle/buildpack_app_lifecycle.tgz"
         - "docker:docker_app_lifecycle/docker_app_lifecycle.tgz"
     stager:
       lifecycle_bundles:
         - "buildpack/cflinuxfs2:buildpack_app_lifecycle/buildpack_app_lifecycle.tgz"
         - "buildpack/opensuse42:buildpack_app_lifecycle/buildpack_app_lifecycle.tgz"
+        - "buildpack/cfsusefs2:buildpack_app_lifecycle/buildpack_app_lifecycle.tgz"
         - "docker:docker_app_lifecycle/docker_app_lifecycle.tgz"
   cc:
     broker_client_timeout_seconds: 70
