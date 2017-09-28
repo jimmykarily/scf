@@ -67,9 +67,6 @@
 [submodule "src/cf-opensuse42-release"]
 	path = src/cf-opensuse42-release
 	url = https://github.com/SUSE/cf-opensuse42-release.git
-[submodule "src/cfsusefs2"]
-	path = src/cfsusefs2
-	url = https://github.com/jimmykarily/cfsusefs2.git
 [submodule "src/hcf-release/src/github.com/suse/testbrain"]
 	path = src/hcf-release/src/github.com/suse/testbrain
 	url = https://github.com/SUSE/testbrain.git
@@ -79,3 +76,7 @@
 [submodule "src/cf-usb"]
 	path = src/cf-usb
 	url = https://github.com/SUSE/cf-usb
+[submodule "src/cfsusefs2"]
+	path = src/cfsusefs2
+	url = https://github.com/jimmykarily/cfsusefs2.git
+	branch = cfsusefs2
